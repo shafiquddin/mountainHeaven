@@ -1,0 +1,173 @@
+/* 
+Font : Roboto
+Forecast Blue:#0a3d62;
+black:#000;
+white:#fff;
+red:#ff0000;
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #000;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+}
+
+.nav-menu a {
+  color: #0a3d62;
+  font-size: 20px;
+  margin: 0 45px;
+}
+
+.video-container {
+  height: 90vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.video-container::after {
+  content: "";
+  position: absolute;
+  background-color: #0a3d62;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  opacity: 0.8;
+}
+
+.main-nav {
+  height: 10vh;
+}
+
+.video-container video {
+  object-fit: cover;
+  width: 100vw;
+  height: 90vh;
+}
+
+.main-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav img {
+  height: 8vh;
+  width: auto;
+}
+
+.nav-menu li {
+  margin-top: 10px;
+}
+
+.nav-menu li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ff0000;
+  display: block;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.nav-menu li:hover::after {
+  width: 100%;
+}
+
+.centered-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+
+.centered-element h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.centered-element h1 span {
+  color: #0a3d62;
+  font-weight: 700;
+}
+
+.centered-buttons {
+  margin-top: 50px;
+}
+
+.centered-buttons a {
+  color: #fff;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  font-weight: 300;
+  margin: 20px;
+  transition: all 0.3s ease;
+}
+
+.centered-buttons a:hover {
+  background-color: #0a3d62;
+  border-radius: 10px;
+}
+
+#arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  height: 26px;
+  width: 26px;
+  text-align: center;
+  margin-left: -13px;
+  z-index: 999;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  animation: animateArrow 2s infinite;
+}
+
+@keyframes animateArrow {
+  0% {
+    bottom: 40px;
+  }
+  30% {
+    bottom: 25px;
+    border-color: #0a3d62;
+  }
+  100% {
+    bottom: 40px;
+  }
+}
