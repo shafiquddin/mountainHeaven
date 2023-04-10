@@ -58,7 +58,7 @@ header {
   background-color: #0a3d62;
   top: 10vh;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 90vh;
   opacity: 0.8;
 }
@@ -80,7 +80,7 @@ header {
 }
 
 .main-nav img {
-  height: 8vh;
+  height: 9vh;
   width: auto;
 }
 
@@ -170,4 +170,61 @@ header {
   100% {
     bottom: 40px;
   }
+}
+
+.about-me {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me img {
+  max-width: 500px;
+}
+
+.about-container {
+  margin: 0 20px;
+}
+
+.about-me h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #0a3d62;
+  display: block;
+}
+
+.about-me h2:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 70px;
+  background-color: #ff0000;
+  margin-top: 10px;
+}
+
+.about-container p {
+  width: 80%;
+  line-height: 1.7;
+}
+
+.quote-section {
+  margin-top: 80px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(10, 61, 98, 0.8), rgba(0, 0, 0, 1)),
+    url("../img/img2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.quote-section p {
+  padding: 100px 0;
+  color: #fff;
+  font-size: 25px;
+  font-style: italic;
 }
