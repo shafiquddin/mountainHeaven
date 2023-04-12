@@ -318,6 +318,14 @@ header {
   cursor: pointer;
 }
 
+#google-maps {
+  height: 100%;
+  width: 100%;
+}
+
+.gm-style-mtc .gm-svpc .gmnoprint .gm-control-active .gm-fullscreen-control {
+  display: none;
+}
 .contact-us {
   display: flex;
   flex-direction: column;
@@ -422,4 +430,8 @@ form button:hover {
   display: inline-block;
   padding: 6px;
   transform: rotate(-130deg);
+}
+
+.hidden {
+  display: none;
 }
