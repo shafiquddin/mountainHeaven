@@ -136,6 +136,7 @@ header {
   border: 2px solid #fff;
   font-weight: 300;
   margin: 20px;
+  font-size: 20px;
   transition: all 0.3s ease;
 }
 
@@ -280,10 +281,10 @@ header {
 }
 
 .gallery-section {
-  margin-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 60px;
 }
 .gallery-section div {
   overflow: hidden;
@@ -311,7 +312,7 @@ header {
 
 #map {
   position: relative;
-  height: 100vh;
+  height: 160vh;
   width: 100%;
   overflow: hidden;
   display: inline-block;

@@ -1,12 +1,150 @@
 @media only screen and (max-width: 1420px) {
+  .container {
+    margin: 0 30px;
+  }
+  .centered-element h1 {
+    font-size: 39px;
+  }
+  .centered-buttons a {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+  .about-me {
+    margin-top: 80px;
+  }
 }
 @media only screen and (max-width: 1200px) {
+  .centered-element h1 {
+    font-size: 33px;
+  }
+  .centered-buttons a {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+  .quote-section p {
+    font-size: 20px;
+  }
+
+  .activites-container {
+    width: 47%;
+  }
+  .activites-container:nth-child(3),
+  .activites-container:nth-child(4) {
+    margin-bottom: 0;
+  }
 }
 @media only screen and (max-width: 991px) {
+  .nav-menu a {
+    margin: 0 25px;
+  }
+  .centered-element h1 {
+    display: none;
+  }
+  .centered-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .about-container h2 {
+    font-size: 30px;
+    margin: 0 auto 20px auto;
+    width: 80%;
+  }
+  .about-container p {
+    margin: 0 auto 20px auto;
+    font-size: 15px;
+  }
+  .quote-section p {
+    font-size: 16px;
+  }
+  .gallery-section div {
+    flex: 1 0 50%;
+  }
+  .contact-us {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    margin: 0 10px;
+  }
+  .about-container {
+    margin: 30px auto 0 auto;
+  }
+  .about-me img {
+    max-width: 90%;
+  }
+  .quote-section p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .activites-container {
+    width: 90%;
+  }
+  .activites-container p {
+    margin-bottom: 10px;
+  }
+  .activities {
+    margin: 60px 0;
+  }
+  .gallery-section div {
+    flex: 1 0 100%;
+  }
+  .contact-us {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 480px) {
+  .about-us {
+    margin-top: 40px;
+  }
+  .contact-us {
+    padding: 15px;
+  }
+  .activities {
+    justify-content: center;
+    margin: 70px 0;
+  }
+  .about-container p {
+    width: 90%;
+  }
+  .contact-us h2 {
+    font-size: 20px;
+  }
+  .contact-us p {
+    font-size: 15px;
+  }
+  .contact-us form label {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  .contact-us form button {
+    font-size: 15px;
+    margin: 20px auto;
+    width: 100px;
+  }
 }
 @media only screen and (max-width: 320px) {
 }
