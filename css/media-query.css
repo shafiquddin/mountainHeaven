@@ -76,22 +76,21 @@
     height: 100%;
     width: 100%;
     background-color: #fff;
-    z-index: 9999;
+    z-index: 9990;
     top: 0;
     left: 0;
     display: none;
   }
   .open {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .open a {
     font-size: 25px;
     padding: 15px;
   }
-
   .open-button span {
     display: block;
     justify-content: center;
